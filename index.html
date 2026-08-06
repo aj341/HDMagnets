@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Design Bees Lead Magnets</title>
+  <title>Human Digital Lead Magnets</title>
   <style>
     :root {
       color-scheme: dark;
@@ -34,11 +34,25 @@
       padding: 56px 0;
     }
 
-    img {
-      width: 190px;
-      height: auto;
-      display: block;
+    .brand {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 8px;
       margin-bottom: 44px;
+      color: var(--text);
+      letter-spacing: 0;
+      line-height: 1;
+    }
+
+    .brand b {
+      font-size: 2rem;
+      letter-spacing: -0.05em;
+    }
+
+    .brand span {
+      color: var(--text);
+      font-size: 0.95rem;
+      line-height: 0.92;
     }
 
     h1 {
@@ -89,7 +103,7 @@
       line-height: 1.2;
     }
 
-    span {
+    .grid span {
       color: var(--green);
       font-size: 0.9rem;
     }
@@ -97,10 +111,14 @@
 </head>
 <body>
   <main>
-    <img src="designbees-logo.png" alt="Design Bees">
+    <div class="brand" aria-label="Human Digital"><b>hd</b><span>human<br>digital</span></div>
     <h1>Lead magnet previews</h1>
-    <p>Five interactive campaign assets are published separately for desktop and mobile review.</p>
+    <p>Interactive campaign assets are published separately for desktop and mobile review.</p>
     <div class="grid">
+      <a href="growth-scorecard.html">
+        <strong>Growth Scorecard</strong>
+        <span>Open preview</span>
+      </a>
       <a href="can-ai-find-you-scorecard.html">
         <strong>Can AI Find You? Scorecard</strong>
         <span>Open preview</span>
